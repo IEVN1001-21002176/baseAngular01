@@ -1,82 +1,82 @@
 <div class="col-6">
-  <div class="mb-3">
-    <form>
-      <div class="form-check">
-        <input
-          type="radio"
-          class="form-check-input"
-          id="radio1"
-          name="optradio"
-          [(ngModel)]="op"
-          [value]="'Sumar'"
-        />
-        <label class="form-check-label" for="radio1">Sumar</label>
-      </div>
-      <div class="form-check">
-        <input
-          type="radio"
-          class="form-check-input"
-          id="radio2"
-          name="optradio"
-          [(ngModel)]="op"
-          [value]="'Restar'"
-        />
-        <label class="form-check-label" for="radio2">Restar</label>
-      </div>
-      <div class="form-check">
-        <input
-          type="radio"
-          class="form-check-input"
-          id="radio2"
-          name="optradio"
-          [(ngModel)]="op"
-          [value]="'Multiplicar'"
-        />
-        <label class="form-check-label" for="radio2">Multiplicar</label>
-      </div>
-      <div class="form-check">
-        <input
-          type="radio"
-          class="form-check-input"
-          id="radio2"
-          name="optradio"
-          [(ngModel)]="op"
-          [value]="'Dividir'"
-        />
-        <label class="form-check-label" for="radio2">Dividir</label>
-      </div>
+<div class="mb-3">
+  <form>
+    <div class="form-check">
+      <input
+        type="radio"
+        class="form-check-input"
+        id="radio1"
+        name="optradio"
+        [(ngModel)]="op"
+        [value]="'Sumar'"
+      />
+      <label class="form-check-label" for="radio1">Sumar</label>
+    </div>
+    <div class="form-check">
+      <input
+        type="radio"
+        class="form-check-input"
+        id="radio2"
+        name="optradio"
+        [(ngModel)]="op"
+        [value]="'Restar'"
+      />
+      <label class="form-check-label" for="radio2">Restar</label>
+    </div>
+    <div class="form-check">
+      <input
+        type="radio"
+        class="form-check-input"
+        id="radio2"
+        name="optradio"
+        [(ngModel)]="op"
+        [value]="'Multiplicar'"
+      />
+      <label class="form-check-label" for="radio2">Multiplicar</label>
+    </div>
+    <div class="form-check">
+      <input
+        type="radio"
+        class="form-check-input"
+        id="radio2"
+        name="optradio"
+        [(ngModel)]="op"
+        [value]="'Dividir'"
+      />
+      <label class="form-check-label" for="radio2">Dividir</label>
+    </div>
 
-      <div class="form-group pt-4">
-        <label for="num1">Número 1:</label>
-        <input
-          [(ngModel)]="num1"
-          name="num1"
-          type="text"
-          class="form-control"
-          id="num1"
-          placeholder="Ingrese número 1"
-        />
-      </div>
+    <div class="form-group pt-4">
+      <label for="num1">Número 1:</label>
+      <input
+        [(ngModel)]="num1"
+        name="num1"
+        type="text"
+        class="form-control"
+        id="num1"
+        placeholder="Ingrese número 1"
+      />
+    </div>
 
-      <div class="form-group pt-4">
-        <label for="num2">Número 2:</label>
-        <input
-          [(ngModel)]="num2"
-          name="num2"
-          type="text"
-          class="form-control"
-          id="num2"
-          placeholder="Ingrese número 2"
-        />
-      </div>
+    <div class="form-group pt-4">
+      <label for="num2">Número 2:</label>
+      <input
+        [(ngModel)]="num2"
+        name="num2"
+        type="text"
+        class="form-control"
+        id="num2"
+        placeholder="Ingrese número 2"
+      />
+    </div>
 
-      <br />
-      <button (click)="Calcular()" type="button" class="btn btn-primary">
-        Calcular
-      </button>
-    </form>
-  </div>
-  <div class="col-6">
-    <h3>Resultado: {{ resultado }}</h3>
-  </div>
+    <br />
+    <button (click)="Calcular()" type="button" class="btn btn-primary">
+      Calcular
+    </button>
+  </form>
+</div>
+<div class="col-6">
+  <h3>Resultado: {{ resultado }}</h3>
+</div>
 </div>
