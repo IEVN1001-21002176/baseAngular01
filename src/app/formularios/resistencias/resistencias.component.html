@@ -1,33 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <form action="">
-    <div>
-      <input type="radio" class="form-check-input" id="radio1" name="optradio"><label >Negro</label>
-      <br>
-      <input type="radio">
-      <br>
-      <input type="radio">
-      <br>
-      <input type="radio">
-      <br>
-      <input type="radio">
-      <br>
-      <input type="radio">
-      <br>
-      <input type="radio">
-      <br>
-      <input type="radio">
-      <br>
-      <input type="radio">
-      <br>
-      <input type="radio">
-    </div>
-  </form>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div class="row d-flex justify-content-between g-3">
+        <div class="col-md-2 p-3">
+          <!--Tabla 1 -->
+          <label id="grisclaro">1ra Banda</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio1" name="banda1" [value]="'negro'"
+            [(ngModel)]="banda1"><label
+            class="border border-black border-2 text-light bg-black h-1 d-inline-block px-5"
+            id="negro">0</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio2" name="banda1" [value]="'cafe'"
+            [(ngModel)]="banda1"><label
+            class="border border-black border-2 text-light h-1 d-inline-block px-5"
+            id="cafe">1</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio3" name="banda1" [value]="'rojo'"
+            [(ngModel)]="banda1"><label
+            class="border border-black border-2 text-light bg-danger h-1 px-5 d-inline-block"
+            id="rojo">2</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio4" name="banda1" [value]="'naranja'"
+            [(ngModel)]="banda1"><label
+            class="border border-black border-2 text-light h-1 px-5 d-inline-block"
+            id="naranja">3</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio5" name="banda1" [value]="'amarillo'"
+            [(ngModel)]="banda1"><label
+            class="border border-black border-2 text-light bg-warning h-1 px-5 d-inline-block"
+            id="amarillo">4</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio6" name="banda1" [value]="'verde'"
+            [(ngModel)]="banda1"><label
+            class="border border-black border-2 text-light bg-success h-1 px-5 d-inline-block"
+            id="verde">5</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio7" name="banda1" [value]="'azul'"
+            [(ngModel)]="banda1"><label
+            class="border border-black border-2 text-light bg-primary h-1 px-5 d-inline-block"
+            id="azul">6</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio8" name="banda1" [value]="'morado'"
+            [(ngModel)]="banda1"><label
+            class="border border-black border-2 text-light h-1 px-5 d-inline-block"
+            id="morado">7</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio9" name="banda1" [value]="'gris'"
+            [(ngModel)]="banda1"><label
+            class="border border-black border-2 text-light bg-secondary h-1 px-5 d-inline-block"
+            id="gris">8</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio10" name="banda1" [value]="'grisclaro'"
+            [(ngModel)]="banda1"><label
+            class="border border-black border-2 text-black h-1 px-5 d-inline-block"
+            id="grisclaro">9</label>
+        </div>
+
+        <!--Tabla 2 -->
+        <div class="col-md-2 p-3">
+          <label id="grisclaro">2da Banda</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio1" name="banda2" [value]="'negro'"
+            [(ngModel)]="banda2"><label
+            class="border border-black border-2 text-light bg-black h-1 px-5 d-inline-block"
+            id="negro">0</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio2" name="banda2" [value]="'cafe'"
+            [(ngModel)]="banda2"><label
+            class="border border-black border-2 text-light h-1 px-5 d-inline-block"
+            id="cafe">1</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio3" name="banda2" [value]="'rojo'"
+            [(ngModel)]="banda2"><label
+            class="border border-black border-2 text-light bg-danger h-1 px-5 d-inline-block"
+            id="rojo">2</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio4" name="banda2" [value]="'naranja'"
+            [(ngModel)]="banda2"><label
+            class="border border-black border-2 text-light h-1 px-5 d-inline-block"
+            id="naranja">3</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio5" name="banda2" [value]="'amarillo'"
+            [(ngModel)]="banda2"><label
+            class="border border-black border-2 text-light bg-warning h-1 px-5 d-inline-block"
+            id="amarillo">4</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio6" name="banda2" [value]="'verde'"
+            [(ngModel)]="banda2"><label
+            class="border border-black border-2 text-light bg-success h-1 px-5 d-inline-block"
+            id="verde">5</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio7" name="banda2" [value]="'azul'"
+            [(ngModel)]="banda2"><label
+            class="border border-black border-2 text-light bg-primary h-1 px-5 d-inline-block"
+            id="azul">6</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio8" name="banda2" [value]="'morado'"
+            [(ngModel)]="banda2"><label
+            class="border border-black border-2 text-light h-1 px-5 d-inline-block"
+            id="morado">7</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio9" name="banda2" [value]="'gris'"
+            [(ngModel)]="banda2"><label
+            class="border border-black border-2 text-light bg-secondary h-1 px-5 d-inline-block"
+            id="gris">8</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio10" name="banda2" [value]="'grisclaro'"
+            [(ngModel)]="banda2"><label
+            class="border border-black border-2 text-black h-1 px-5 d-inline-block"
+            id="grisclaro">9</label>
+        </div>
+
+        <!--Tabla 3 -->
+        <div class="col-md-4 p-1">
+          <label id="grisclaro">3ra Banda Multiplicador</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="x1" name="multiplicador" [value]="'negro'"
+            [(ngModel)]="banda3"><label
+            class="border border-black border-2 text-light bg-black h-1 px-4 d-inline-block"
+            id="negro">x1</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="x2" name="multiplicador" [value]="'cafe'"
+            [(ngModel)]="banda3"><label
+            class="border border-black border-2 text-light h-1 px-4 d-inline-block"
+            id="cafe">x10</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="x3" name="multiplicador" [value]="'rojo'"
+            [(ngModel)]="banda3"><label
+            class="border border-black border-2 text-light bg-danger h-1 px-4 d-inline-block"
+            id="rojo">x100</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="x4" name="multiplicador" [value]="'naranja'"
+            [(ngModel)]="banda3"><label
+            class="border border-black border-2 text-light h-1 px-4 d-inline-block"
+            id="naranja">x1000</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="x5" name="multiplicador" [value]="'amarillo'"
+            [(ngModel)]="banda3"><label
+            class="border border-black border-2 text-light bg-warning h-1 px-4 d-inline-block"
+            id="amarillo">x10000</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="x6" name="multiplicador" [value]="'verde'"
+            [(ngModel)]="banda3"><label
+            class="border border-black border-2 text-light bg-success h-1 px-4 d-inline-block"
+            id="verde">x100000</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="x7" name="multiplicador" [value]="'azul'"
+            [(ngModel)]="banda3"><label
+            class="border border-black border-2 text-light bg-primary h-1 px-4 d-inline-block"
+            id="azul">x1000000</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="x8" name="multiplicador" [value]="'morado'"
+            [(ngModel)]="banda3"><label
+            class="border border-black border-2 text-light h-1 px-4 d-inline-block"
+            id="morado">x10000000</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="x9" name="multiplicador" [value]="'gris'"
+            [(ngModel)]="banda3"><label
+            class="border border-black border-2 text-light bg-secondary h-1 px-4 d-inline-block"
+            id="gris">x100000000</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="x10" name="multiplicador" [value]="'grisclaro'"
+            [(ngModel)]="banda3"><label
+            class="border border-black border-2 text-black h-1 px-4 d-inline-block"
+            id="grisclaro">x1000000000</label>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-start p-3">
+        <!--Tabla oro,plata-->
+        <div class="p-3">
+          <input type="radio"
+            class="border border-black b-2 form-check-input"
+            name="metal"
+            [value]="'dorado'"
+            [(ngModel)]="tolerancia">
+          <label
+            class="border border-black border-2 text-light h-2 d-inline-block"
+            id="dorado">Dorado 5%</label>
+          <br>
+          <input type="radio" class="border border-black b-2 form-check-input"
+            id="radio1" name="metal" [value]="'plata'"
+            [(ngModel)]="tolerancia"><label
+            class="border border-black border-2 text-light bg-secondary h-2 px-1 d-inline-block">Plata
+            10%</label>
+        </div>
+
+        <!--Boton de calcular-->
+        <div class="p-4">
+          <input class="rounded-1" type="button" value="Calcular"
+            (click)="calcular()">
+        </div>
+      </div>
+
+      <!--Visualizacion de Resultados-->
+      <div class="container mt-4 ">
+        <!-- Encabezado -->
+        <div class="row fw-bold text-center text-black rounded">
+          <div class="col border border-2 border-black">Color1</div>
+          <div class="col border border-2 border-black">Color2</div>
+          <div class="col border border-2 border-black">Color3</div>
+          <div class="col border border-2 border-black">Tolerancia</div>
+          <div class="col border border-2 border-black">Valor</div>
+          <div class="col border border-2 border-black">Valor máximo</div>
+          <div class="col border border-2 border-black">Valor mínimo</div>
+        </div>
+
+        <div class="row text-center" *ngIf="resultado">
+          <div class="col border border-2 border-black">{{ resultado.banda1
+            }}</div>
+          <div class="col border border-2 border-black">{{ resultado.banda2
+            }}</div>
+          <div class="col border border-2 border-black">{{ resultado.banda3
+            }}</div>
+          <div class="col border border-2 border-black">{{ resultado.tolerancia
+            }} {{ resultado.toleranciaPorc }}%</div>
+          <div class="col border border-2 border-black">{{ resultado.valor
+            }}</div>
+          <div class="col border border-2 border-black">{{ resultado.valorMax
+            }}</div>
+          <div class="col border border-2 border-black">{{ resultado.valorMin
+            }}</div>
+        </div>
+
+      </div>
+    </form>
+  </body>
 </html>
