@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distancias</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <form>
+
+      <div class="mt-4">
+        x1 <input type="number" [(ngModel)]="x1" name="x1" />
+      </div>
+      <div class="mt-4">
+        y1 <input type="number" [(ngModel)]="y1" name="y1" />
+      </div>
+      <div class="mt-4">
+        x2 <input type="number" [(ngModel)]="x2" name="x2" />
+      </div>
+      <div class="mt-4">
+        y2 <input type="number" [(ngModel)]="y2" name="y2" />
+      </div>
+      <div id="dist">
+        <label>La distancia entre los dos puntos es: {{
+          distanciaResultado }}</label>
+      </div>
+      <button
+        type="button"
+        class=" mt-3 ms-5 rounded-1"
+        (click)="calcularDistancia()">
+        CALCULAR
+      </button>
+
+    </form>
+
+  </body>
+</html>
